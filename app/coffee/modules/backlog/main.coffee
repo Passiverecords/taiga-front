@@ -1076,7 +1076,7 @@ BurndownBacklogGraphDirective = ($translate) ->
             points:
                 show: false
         })
-        optimal_line = _.map(dataToDraw.milestones, (ml) -> ml.optimal)
+        optimal_line = _.map(dataToDraw.milestones, (ml) -> Number(ml.optimal.toFixed(1)))
         data.push({
             data: _.zip(milestonesRange, optimal_line)
             lines:
