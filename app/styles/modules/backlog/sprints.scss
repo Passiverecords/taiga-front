@@ -164,7 +164,6 @@
                 opacity: .9;
                 transition: background .2s ease-in;
             }
-
         }
         .gu-transit {
             background: lighten($gray-light, 12%);
@@ -175,7 +174,7 @@
         }
         .column-us {
             @include font-size(small);
-            flex-flow: 3;
+            flex-grow: 3;
             padding: 0 4px;
         }
         .us-name {
@@ -197,6 +196,10 @@
             &.blocked {
                 color: $red;
             }
+        }
+        .column-status {
+            flex: 0 0 .5rem;
+            margin-left: 4px;
         }
         &.sprint-empty-wrapper { // hide dragging items
             .row {
